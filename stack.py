@@ -6,10 +6,10 @@ class Stack:
         self.container = deque()
 
     def push(self, val):
-        return self.container.append(val)
+        self.container.append(val)
 
     def pop(self):
-        return self.container.pop()
+        self.container.pop()
 
     def is_empty(self):
         return len(self.container) == 0
